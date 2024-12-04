@@ -6,6 +6,7 @@ for line in unolists.split(/\n/)
     ulist2.push(t2.to_i)
 end
 ulist1 = ulist1.sort()
+ulist2 = ulist2.sort()
 sumall = 0
 ulist1.each_with_index {|num, i| sumall += (num - ulist2[i]).abs()}
 puts sumall
